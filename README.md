@@ -55,6 +55,14 @@ It is possible to list all of the versions of `py-random-password` available on 
 conda search py-random-password --channel conda-forge
 ```
 
+## Random Generate Password : 
+```python
+from PyRandomPassword.PyRandomPassword import RandomGeneratePassword as RandomPassword
+
+Password = RandomPassword(10)
+
+print('Password : {}'.format(Password))
+```
 
 About conda-forge
 =================
