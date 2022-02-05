@@ -33,6 +33,9 @@ Current release info
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-py--random--password-green.svg)](https://anaconda.org/conda-forge/py-random-password) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) |
 
+[![Build Status](https://app.travis-ci.com/sujitmandal/py-random-password.svg?branch=master)](https://app.travis-ci.com/sujitmandal/py-random-password) [![GitHub license](https://img.shields.io/github/license/sujitmandal/py-random-password)](https://github.com/sujitmandal/py-random-password/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-random-password) ![PyPI](https://img.shields.io/pypi/v/py-random-password?style=plastic) [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py-random-password/badges/version.svg)](https://anaconda.org/conda-forge/py-random-password) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py-random-password/badges/installer/conda.svg)](https://conda.anaconda.org/conda-forge) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py-random-password/badges/platforms.svg)](https://anaconda.org/conda-forge/py-random-password) 
+
+
 Installing py-random-password
 =============================
 
