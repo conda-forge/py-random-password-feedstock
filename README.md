@@ -1,11 +1,11 @@
-About py-random-password
-========================
+About py-random-password-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py-random-password-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sujitmandal/py-random-password
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py-random-password-feedstock/blob/master/LICENSE.txt)
 
 Summary: generate a random password using python.
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15288&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py-random-password-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15288&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py-random-password-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -33,9 +33,6 @@ Current release info
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-py--random--password-green.svg)](https://anaconda.org/conda-forge/py-random-password) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) |
 
-[![Build Status](https://app.travis-ci.com/sujitmandal/py-random-password.svg?branch=master)](https://app.travis-ci.com/sujitmandal/py-random-password) [![GitHub license](https://img.shields.io/github/license/sujitmandal/py-random-password)](https://github.com/sujitmandal/py-random-password/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-random-password) ![PyPI](https://img.shields.io/pypi/v/py-random-password?style=plastic) [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py-random-password.svg)](https://anaconda.org/conda-forge/py-random-password) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py-random-password/badges/version.svg)](https://anaconda.org/conda-forge/py-random-password) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py-random-password/badges/installer/conda.svg)](https://conda.anaconda.org/conda-forge) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py-random-password/badges/platforms.svg)](https://anaconda.org/conda-forge/py-random-password) 
-
-
 Installing py-random-password
 =============================
 
@@ -46,26 +43,43 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `py-random-password` can be installed with:
+Once the `conda-forge` channel has been enabled, `py-random-password` can be installed with `conda`:
 
 ```
 conda install py-random-password
 ```
 
-It is possible to list all of the versions of `py-random-password` available on your platform with:
+or with `mamba`:
+
+```
+mamba install py-random-password
+```
+
+It is possible to list all of the versions of `py-random-password` available on your platform with `conda`:
 
 ```
 conda search py-random-password --channel conda-forge
 ```
 
-## Random Generate Password : 
-```python
-from PyRandomPassword.PyRandomPassword import RandomGeneratePassword as RandomPassword
+or with `mamba`:
 
-Password = RandomPassword(10)
-
-print('Password : {}'.format(Password))
 ```
+mamba search py-random-password --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search py-random-password --channel conda-forge
+
+# List packages depending on `py-random-password`:
+mamba repoquery whoneeds py-random-password --channel conda-forge
+
+# List dependencies of `py-random-password`:
+mamba repoquery depends py-random-password --channel conda-forge
+```
+
 
 About conda-forge
 =================
@@ -81,10 +95,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
